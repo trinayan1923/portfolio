@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: stickyn ;
+}
+
+body {
+  background: linear-gradient(to bottom right, #acb5cf, #acb5cf);
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+}
+
+.logo {
+  font-size: 18px;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #0055ff;
+}
+
+.nav-links a.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #0055ff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text .intro {
+  color: #0055ff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.text .role {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background-color: #0055ff;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.profile-photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
